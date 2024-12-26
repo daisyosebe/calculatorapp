@@ -2,15 +2,15 @@ import"./App.css"
 import"./index.css"
 function App(){
     return (
-        <div className="claculator-grid">
+        <div className="calculator-grid">
             <div className= "output">
-                <div className="previous-operand"></div>
-                <div className="current-operand"></div>
+                <div className="previous-operand">123+</div>
+                <div className="current-operand">456</div>
             </div>
         <button className= "span-two"> AC </button>
         <button > DeL </button>
         <button > / </button>
-        <button > 1 </button>
+        <button > 1</button>
         <button > 2 </button>
         <button > 3 </button>
         <button > * </button>
