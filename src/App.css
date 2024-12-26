@@ -48,16 +48,21 @@ body {
 .calculator-grid{
   display: grid;
   margin-top: 2rem;
+  /* space from the top of the page */
   grid-template-columns: repeat(4, 6rem); 
+  /* 4 boxes/grid spaces and 6rem for size : column = direction */
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  /* min is 7 for output box size, auto for maz size: for wrapping: repeat 5 rows have them be 6rem */
 }
 
 .span-two{
   grid-column: span 2;
+  /* the grid is divided into 4 *grid-temp-column* and this element take up two of those spaces and then everything else flex wraps around */
 }
 
 .output {
   grid-column: 1 / -1;
+  /* has its own column (box) */
   background-color: rgba(0,0,0,.75);
   display: flex;
   flex-direction: column;
@@ -67,11 +72,11 @@ body {
   justify-content: space-around;
   /*spaces the prev and the current away from each other  */
   padding: .75rem;
-  /*  */
+  /* Space around the prev and current elements individially */
   word-wrap: break-word;
-
+/* breaks when there a lot of numbers and then... */
   word-break: break-all; 
-  /* wraps to the nxt line */
+  /* ....wraps to the nxt line when theres a long input */
 }
 
 .output .previous-operand {
