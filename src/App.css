@@ -55,6 +55,8 @@ body {
   /* min is 7 for output box size, auto for maz size: for wrapping: repeat 5 rows have them be 6rem */
 }
 
+.calculator-grid > button
+
 .span-two{
   grid-column: span 2;
   /* the grid is divided into 4 *grid-temp-column* and this element take up two of those spaces and then everything else flex wraps around */
